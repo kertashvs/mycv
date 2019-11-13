@@ -1,0 +1,185 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+@font-face {font-family: Roboto;src: url(font/Roboto-medium.ttf);}
+@font-face {font-family: Roboto-thin;src: url(font/Roboto-thin.ttf);}
+@font-face {font-family: garamond;src: url(font/EBGaramond-medium.ttf);}
+@font-face {font-family: SFMono;src: url(font/SFMonoRegular.otf);}
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie&display=swap');
+
+
+/*
+
+
+
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Lora', serif;
+
+    font-family: 'ZCOOL XiaoWei', serif;
+
+    font-family: 'Srisakdi', cursive;
+
+    font-family: 'Lobster Two', cursive;
+
+    font-family: 'Arima Madurai', cursive;
+
+    font-family: 'Pattaya', sans-serif;
+
+    font-family: 'Gabriela', serif;
+
+    font-family: 'Milonga', cursive;
+
+    font-family: 'Seaweed Script', cursive;
+
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+
+
+*/
+
+
+body{
+	background:#121f28;
+	font-family:sans-serif;
+}
+.tex{
+	position:absolute;
+	width:100%;
+	height:1500px;
+	top:-10px;z-index:-1;
+}
+#wrapper{
+	width:600px;
+	margin:30px auto;
+}
+
+
+#temp, #content{box-sizing:border-box;background:#fff;}
+#temp{
+	width:350px;
+	height:350px;
+	margin:0 auto;
+	border-radius:50% 50% 0 0;
+	overflow:hidden;
+	padding:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#temp span{
+	height:220px;
+	width:220px;
+	border-radius:50%;
+	background:green;
+	overflow:hidden;
+	display:flex;
+	justify-content:center;
+	
+}
+#temp img{
+	margin-top:-30px;
+	width:220px;
+	height:350px;
+}
+
+
+/* CONTENT */
+#content{
+	width:350px;
+	margin:0px auto 0;
+	padding:0 20px 50px;
+	text-align:center;
+}
+
+.isi{
+	font-size:12px;
+	padding:20px 0 0;
+	font-family:'Merriweather', serif;
+}
+
+#identitas{
+	font-family:'Lobster Two', cursive;
+	padding:0 0 50px;
+}
+h5{
+	font-size:20px;
+	font-family:'Lobster Two', cursive;
+	letter-spacing:2px;
+}
+
+#minat, #education, #skill, #kontak{
+	padding:60px 0 0;
+}
+
+#skill img, #minat img{
+	width:70px;
+}
+
+/* ==== CONTENT 121f28 0c9b83 ====  */
+
+
+#left-side{
+	position:fixed;
+	top:210px;
+	padding:30px 10px;
+	border-radius:40px;
+}
+#left-side .menu{
+	width:70px;
+	height:70px;
+	box-sizing:border-box;
+	border-radius:50px;background:#fff;
+	margin:10px 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transition:background .8s;
+	cursor:pointer;
+}
+.menu img{
+	
+}
+#left-side .menu:hover{
+	transition:background .4s;
+	background:#0d957f;
+}
+a{
+	text-decoration:none;
+	font-weight:bold;
+	font-size:16px;
+	color:#000;
+}
+#left-side .menu:hover > a{
+	transition:color .4s;
+	transition-delay:.05s;
+	color:#fff;
+}
+#right-side{
+	position:fixed;
+	top:170px;
+	right:370px;
+	padding:30px 10px;
+}
+#right-side .sosmed{
+	width:70px;
+	height:70px;
+	box-sizing:border-box;
+	background:#fff;
+	margin:10px 0;
+	display:flex;
+	border-radius:50px;
+	justify-content:center;
+	align-items:center;
+	transition:background .8s;
+	cursor:pointer;
+}
+#right-side .sosmed:hover{
+	background:#0d957f;
+}
+.sosmed img{
+	width:40px;
+	height:40px;	
+}
